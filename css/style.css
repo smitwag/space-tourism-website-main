@@ -497,6 +497,10 @@ body {
     align-items: end;
     padding-bottom: 8rem;
   }
+  
+  .container--home .content__text {
+    max-width: 45ch;
+  }
 
   .container--home .cta {
     justify-self: end;
