@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body class="destination">
+
+  <header class="navbar flex">
+    <a href="index.html" class="navbar__logo">
+      <img src="assets/shared/logo.svg" alt="Space tourism logo">
+    </a>
+    <button class="mobile-nav-toggle" data-toggle-target="#nav"></button>
+    <nav class="navbar__nav hide" id="nav">
+      <ul class="nav__nav-list ff-sans-cond fs-nav uppercase ls-2 flex">
+        <li class="nav-list__nav-item"><a href="index.html" class="nav-item__nav-link"><span>00</span>Home</a></li>
+        <li class="nav-list__nav-item active"><a href="destination.html" class="nav-item__nav-link"><span>01</span>Destination</a></li>
+        <li class="nav-list__nav-item"><a href="crew.html" class="nav-item__nav-link"><span>02</span>Crew</a></li>
+        <li class="nav-list__nav-item"><a href="technology.html" class="nav-item__nav-link"><span>03</span>Technology</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container container--destination grid flow">
+      <h1 class="numbered-title"><span>01</span>Pick your destination</h1>
+      <img class="container--destination__img" id="content-img" src="" alt="">
+      <nav class="container--destination__tabs">
+        <ul class="tab-list flex ff-sans-cond fs-sub-h2 text-accent ls-1 uppercase" data-content-type="destinations"
+          data-content-target="#content">
+          <li class="tab-list__tab-item active">Moon</li>
+          <li class="tab-list__tab-item">Mars</li>
+          <li class="tab-list__tab-item">Europa</li>
+          <li class="tab-list__tab-item">Titan</li>
+        </ul>
+      </nav>
+      <div class="content" id="content" data-image="#content-img">
+        <h2 class="content__heading ff-serif fs-h2 uppercase"></h2>
+        <p class="content__text"></p>
+        <div class="content__info flex">
+          <div>
+            <span class="ff-sans-cond fs-sub-h2 text-accent ls-2 uppercase">Avg. distance</span>
+            <p class="content__info-distance ff-serif fs-sub-h1 uppercase"></p>
+          </div>
+          <div>
+            <span class="ff-sans-cond fs-sub-h2 text-accent ls-2 uppercase">Est. travel time</span>
+            <p class="content__info-travel ff-serif fs-sub-h1 uppercase"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/app.js"></script>
+  
+</body>
+</html>
